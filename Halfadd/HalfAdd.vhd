@@ -9,8 +9,8 @@ USE ieee.std_logic_1164.ALL;
 -- ENTITY
 ----------------------------------------------------------
 ENTITY HalfAdd is
-	PORT(A, B		: IN	std_logic;
-	     Sum, Cout	: OUT	std_logic);
+	PORT(A, B		: IN	STD_LOGIC;
+	     Sum, Cout	: OUT	STD_LOGIC);
 END HalfAdd;
 
 ----------------------------------------------------------

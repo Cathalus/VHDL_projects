@@ -21,7 +21,7 @@ SIGNAL I1, I2, I3	: 	STD_LOGIC;
 -- Komponentendeklaration
 COMPONENT HalfAdd IS 
 	PORT(A, B		: 	IN		STD_LOGIC;
-		  Sum, Cout	:	OUT	STD_LOGIC);
+		  Sum, Cout	:	OUT		STD_LOGIC);
 END COMPONENT HalfAdd;
 
 BEGIN
