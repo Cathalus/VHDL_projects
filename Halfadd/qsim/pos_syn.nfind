@@ -1,0 +1,7 @@
+A,input,user_entered
+B,input,user_entered
+Cout,output,user_entered
+Cout~0,comb,compiler_generated
+Sum,output,user_entered
+Sum~0,comb,compiler_generated
+,hierarchy,user_entered

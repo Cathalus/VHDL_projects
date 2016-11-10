@@ -1,0 +1,10 @@
+A,input,user_entered
+B,input,user_entered
+Cout,output,user_entered
+Cout~0,comb,compiler_generated
+Sum,output,user_entered
+Sum~0,comb,compiler_generated
+~ASDO~,input,compiler_generated
+~LVDS150p/nCEO~,output,compiler_generated
+~nCSO~,input,compiler_generated
+,hierarchy,user_entered
