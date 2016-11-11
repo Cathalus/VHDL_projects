@@ -37,11 +37,11 @@
 
 
 set_global_assignment -name FAMILY "Cyclone II"
-set_global_assignment -name DEVICE EP2C35F672C6
+set_global_assignment -name DEVICE EP2C20F484C7
 set_global_assignment -name TOP_LEVEL_ENTITY DUALto7SEG
 set_global_assignment -name ORIGINAL_QUARTUS_VERSION "10.1 SP1"
 set_global_assignment -name PROJECT_CREATION_TIME_DATE "11:50:43  NOVEMBER 10, 2016"
-set_global_assignment -name LAST_QUARTUS_VERSION "10.1 SP1"
+set_global_assignment -name LAST_QUARTUS_VERSION "13.0 SP1"
 set_global_assignment -name MIN_CORE_JUNCTION_TEMP 0
 set_global_assignment -name MAX_CORE_JUNCTION_TEMP 85
 set_global_assignment -name ERROR_CHECK_FREQUENCY_DIVISOR 1
@@ -54,24 +54,30 @@ set_global_assignment -name VHDL_FILE ../DUALtoBCD/Dual2BCD.vhd
 set_global_assignment -name VHDL_FILE ../BCDto7SEG/BCDDecoder.vhd
 set_global_assignment -name VHDL_FILE DUALto7SEG.vhd
 set_global_assignment -name STRATIX_DEVICE_IO_STANDARD "3.3-V LVTTL"
-set_location_assignment PIN_N25 -to Inp[0]
-set_location_assignment PIN_N26 -to Inp[1]
-set_location_assignment PIN_AF14 -to Inp[4]
-set_location_assignment PIN_AE14 -to Inp[3]
-set_location_assignment PIN_P25 -to Inp[2]
-set_location_assignment PIN_V13 -to SegOnes[6]
-set_location_assignment PIN_V14 -to SegOnes[5]
-set_location_assignment PIN_AE11 -to SegOnes[4]
-set_location_assignment PIN_AD11 -to SegOnes[3]
-set_location_assignment PIN_AC12 -to SegOnes[2]
-set_location_assignment PIN_AB12 -to SegOnes[1]
-set_location_assignment PIN_AF10 -to SegOnes[0]
-set_location_assignment PIN_AB24 -to SegTens[6]
-set_location_assignment PIN_AA23 -to SegTens[5]
-set_location_assignment PIN_AA24 -to SegTens[4]
-set_location_assignment PIN_Y22 -to SegTens[3]
-set_location_assignment PIN_W21 -to SegTens[2]
-set_location_assignment PIN_V21 -to SegTens[1]
-set_location_assignment PIN_V20 -to SegTens[0]
-set_global_assignment -name MISC_FILE "C:/DIGISYS/Labor1/DUALto7SEG/DUALto7SEG.dpf"
+set_location_assignment PIN_L22 -to Inp[0]
+set_location_assignment PIN_L21 -to Inp[1]
+set_location_assignment PIN_W12 -to Inp[4]
+set_location_assignment PIN_V12 -to Inp[3]
+set_location_assignment PIN_M22 -to Inp[2]
+set_location_assignment PIN_E2 -to SegOnes[6]
+set_location_assignment PIN_F1 -to SegOnes[5]
+set_location_assignment PIN_F2 -to SegOnes[4]
+set_location_assignment PIN_H1 -to SegOnes[3]
+set_location_assignment PIN_H2 -to SegOnes[2]
+set_location_assignment PIN_J1 -to SegOnes[1]
+set_location_assignment PIN_J2 -to SegOnes[0]
+set_location_assignment PIN_D1 -to SegTens[6]
+set_location_assignment PIN_D2 -to SegTens[5]
+set_location_assignment PIN_G3 -to SegTens[4]
+set_location_assignment PIN_H4 -to SegTens[3]
+set_location_assignment PIN_H5 -to SegTens[2]
+set_location_assignment PIN_H6 -to SegTens[1]
+set_location_assignment PIN_E1 -to SegTens[0]
 set_instance_assignment -name PARTITION_HIERARCHY root_partition -to | -section_id Top
+set_global_assignment -name VECTOR_WAVEFORM_FILE DUALto7SEG.vwf
+set_global_assignment -name SIMULATION_MODE FUNCTIONAL
+set_global_assignment -name EDA_SIMULATION_TOOL "ModelSim-Altera (Verilog)"
+set_global_assignment -name EDA_OUTPUT_DATA_FORMAT "VERILOG HDL" -section_id eda_simulation
+set_global_assignment -name EDA_GENERATE_FUNCTIONAL_NETLIST ON -section_id eda_simulation
+set_global_assignment -name VECTOR_OUTPUT_FORMAT VWF
+set_global_assignment -name INCREMENTAL_VECTOR_INPUT_SOURCE /home/cathalus/development/FPGA/VHDL_projects/DUALto7SEG/DUALto7SEG.vwf

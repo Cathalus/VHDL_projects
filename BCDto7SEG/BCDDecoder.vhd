@@ -9,8 +9,8 @@ USE ieee.std_logic_1164.ALL;
 -- ENTITY
 ----------------------------------------------------------
 ENTITY BCDDecoder is
-	PORT(	Inp			:  IN		STD_LOGIC_VECTOR(3 DOWNTO 0);
-			Outp		:  OUT		STD_LOGIC_VECTOR(6 DOWNTO 0));
+	PORT(	Inp		:  IN		STD_LOGIC_VECTOR(3 DOWNTO 0);
+			Outp	:  OUT		STD_LOGIC_VECTOR(6 DOWNTO 0));
 END BCDDecoder;
 
 ----------------------------------------------------------
