@@ -8,7 +8,7 @@ USE IEEE.STD_LOGIC_1164.ALL;
 -- ENTITY
 --------------------------------------------------------------
 ENTITY DUALto7SEG IS
-	PORT( Inp:					IN		STD_LOGIC_VECTOR(4 downto 0);
+	PORT( 	Inp:				IN		STD_LOGIC_VECTOR(4 downto 0);
 			SegOnes, SegTens:	OUT		STD_LOGIC_VECTOR(6 downto 0)
 		  );
 END DUALto7SEG;
