@@ -1,0 +1,7 @@
+Clk,input,user_entered
+CntDown,output,user_entered
+CntUp,output,user_entered
+IncA,input,user_entered
+IncB,input,user_entered
+Rst,input,user_entered
+,hierarchy,user_entered

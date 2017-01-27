@@ -1,0 +1,108 @@
+# -------------------------------------------------------------------------- #
+#
+# Copyright (C) 1991-2011 Altera Corporation
+# Your use of Altera Corporation's design tools, logic functions 
+# and other software and tools, and its AMPP partner logic 
+# functions, and any output files from any of the foregoing 
+# (including device programming or simulation files), and any 
+# associated documentation or information are expressly subject 
+# to the terms and conditions of the Altera Program License 
+# Subscription Agreement, Altera MegaCore Function License 
+# Agreement, or other applicable license agreement, including, 
+# without limitation, that your use is for the sole purpose of 
+# programming logic devices manufactured by Altera and sold by 
+# Altera or its authorized distributors.  Please refer to the 
+# applicable agreement for further details.
+#
+# -------------------------------------------------------------------------- #
+#
+# Quartus II
+# Version 10.1 Build 197 01/19/2011 Service Pack 1 SJ Full Version
+# Date created = 13:20:55  January 18, 2017
+#
+# -------------------------------------------------------------------------- #
+#
+# Notes:
+#
+# 1) The default values for assignments are stored in the file:
+#		DigiClock_assignment_defaults.qdf
+#    If this file doesn't exist, see file:
+#		assignment_defaults.qdf
+#
+# 2) Altera recommends that you do not modify this file. This
+#    file is updated automatically by the Quartus II software
+#    and any changes you make may be lost or overwritten.
+#
+# -------------------------------------------------------------------------- #
+
+
+set_global_assignment -name FAMILY "Cyclone II"
+set_global_assignment -name DEVICE EP2C35F672C6
+set_global_assignment -name TOP_LEVEL_ENTITY DigiClock
+set_global_assignment -name ORIGINAL_QUARTUS_VERSION "10.1 SP1"
+set_global_assignment -name PROJECT_CREATION_TIME_DATE "13:20:55  JANUARY 18, 2017"
+set_global_assignment -name LAST_QUARTUS_VERSION "10.1 SP1"
+set_global_assignment -name MIN_CORE_JUNCTION_TEMP 0
+set_global_assignment -name MAX_CORE_JUNCTION_TEMP 85
+set_global_assignment -name ERROR_CHECK_FREQUENCY_DIVISOR 1
+set_global_assignment -name POWER_PRESET_COOLING_SOLUTION "23 MM HEAT SINK WITH 200 LFPM AIRFLOW"
+set_global_assignment -name POWER_BOARD_THERMAL_MODEL "NONE (CONSERVATIVE)"
+set_global_assignment -name PARTITION_NETLIST_TYPE SOURCE -section_id Top
+set_global_assignment -name PARTITION_FITTER_PRESERVATION_LEVEL PLACEMENT_AND_ROUTING -section_id Top
+set_global_assignment -name PARTITION_COLOR 16764057 -section_id Top
+set_global_assignment -name STRATIX_DEVICE_IO_STANDARD "3.3-V LVTTL"
+set_location_assignment PIN_G26 -to Rst
+set_location_assignment PIN_W26 -to IncHr
+set_location_assignment PIN_P23 -to IncMin
+set_location_assignment PIN_N23 -to IncSec
+set_location_assignment PIN_N2 -to Clk
+set_location_assignment PIN_N9 -to SegHrTens[6]
+set_location_assignment PIN_P9 -to SegHrTens[5]
+set_location_assignment PIN_L7 -to SegHrTens[4]
+set_location_assignment PIN_L6 -to SegHrTens[3]
+set_location_assignment PIN_L9 -to SegHrTens[2]
+set_location_assignment PIN_L2 -to SegHrTens[1]
+set_location_assignment PIN_L3 -to SegHrTens[0]
+set_location_assignment PIN_M4 -to SegHrOnes[6]
+set_location_assignment PIN_M5 -to SegHrOnes[5]
+set_location_assignment PIN_M3 -to SegHrOnes[4]
+set_location_assignment PIN_M2 -to SegHrOnes[3]
+set_location_assignment PIN_P3 -to SegHrOnes[2]
+set_location_assignment PIN_P4 -to SegHrOnes[1]
+set_location_assignment PIN_R2 -to SegHrOnes[0]
+set_location_assignment PIN_R3 -to SegMinTens[6]
+set_location_assignment PIN_R4 -to SegMinTens[5]
+set_location_assignment PIN_R5 -to SegMinTens[4]
+set_location_assignment PIN_T9 -to SegMinTens[3]
+set_location_assignment PIN_P7 -to SegMinTens[2]
+set_location_assignment PIN_P6 -to SegMinTens[1]
+set_location_assignment PIN_T2 -to SegMinTens[0]
+set_location_assignment PIN_T3 -to SegMinOnes[6]
+set_location_assignment PIN_R6 -to SegMinOnes[5]
+set_location_assignment PIN_R7 -to SegMinOnes[4]
+set_location_assignment PIN_T4 -to SegMinOnes[3]
+set_location_assignment PIN_U2 -to SegMinOnes[2]
+set_location_assignment PIN_U1 -to SegMinOnes[1]
+set_location_assignment PIN_U9 -to SegMinOnes[0]
+set_location_assignment PIN_W24 -to SegSecTens[6]
+set_location_assignment PIN_U22 -to SegSecTens[5]
+set_location_assignment PIN_Y25 -to SegSecTens[4]
+set_location_assignment PIN_Y26 -to SegSecTens[3]
+set_location_assignment PIN_AA26 -to SegSecTens[2]
+set_location_assignment PIN_AA25 -to SegSecTens[1]
+set_location_assignment PIN_Y23 -to SegSecTens[0]
+set_location_assignment PIN_Y24 -to SegSecOnes[6]
+set_location_assignment PIN_AB25 -to SegSecOnes[5]
+set_location_assignment PIN_AB26 -to SegSecOnes[4]
+set_location_assignment PIN_AC26 -to SegSecOnes[3]
+set_location_assignment PIN_AC25 -to SegSecOnes[2]
+set_location_assignment PIN_V22 -to SegSecOnes[1]
+set_location_assignment PIN_AB23 -to SegSecOnes[0]
+set_global_assignment -name MISC_FILE "C:/DIGISYS/VHDL_projects-master/Digital-Clock/DigiClock.dpf"
+set_global_assignment -name VHDL_FILE components/BCDCounter39/BCDCounter39.vhd
+set_global_assignment -name VHDL_FILE components/DualMultiplexer/DualMultiplex.vhd
+set_global_assignment -name VHDL_FILE components/GenericBCDCounter/GenericBCDCounter.vhd
+set_global_assignment -name VHDL_FILE components/BCDto7SEG/BCDDecoder.vhd
+set_global_assignment -name VHDL_FILE components/ClockDivide/ClockDivide.vhd
+set_global_assignment -name VHDL_FILE ../../../LabWork_HwProg/SOPC/Hardware/Debouncer/DigiClock.vhd
+set_instance_assignment -name PARTITION_HIERARCHY root_partition -to | -section_id Top

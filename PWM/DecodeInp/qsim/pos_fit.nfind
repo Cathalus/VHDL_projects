@@ -1,0 +1,10 @@
+Clk,input,user_entered
+CntDown,output,user_entered
+CntUp,output,user_entered
+IncA,input,user_entered
+IncB,input,user_entered
+Rst,input,user_entered
+~ASDO~,input,compiler_generated
+~LVDS150p/nCEO~,output,compiler_generated
+~nCSO~,input,compiler_generated
+,hierarchy,user_entered

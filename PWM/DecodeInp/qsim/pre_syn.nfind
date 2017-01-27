@@ -1,0 +1,9 @@
+Clk,input,user_entered
+CntDown,output,user_entered
+CntDown~reg0,reg,compiler_generated
+CntUp,output,user_entered
+CntUp~reg0,reg,compiler_generated
+IncA,input,user_entered
+IncB,input,user_entered
+Rst,input,user_entered
+,hierarchy,user_entered

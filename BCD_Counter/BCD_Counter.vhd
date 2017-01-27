@@ -11,7 +11,7 @@ USE ieee.std_logic_unsigned.all;
 -- ENTITY
 ---------------------------------------------------------------------
 ENTITY BCD_Counter IS
-	PORT	(	Ena, Clk, Rst, UD			:		IN		STD_LOGIC;
+	PORT	(	Ena, Clk, Rst, UD			:		IN	STD_LOGIC;
 				Over						:		OUT	STD_LOGIC;
 				CntBcd						:		OUT	STD_LOGIC_VECTOR(3 DOWNTO 0)
 			);
